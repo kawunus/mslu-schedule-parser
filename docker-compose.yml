@@ -1,0 +1,13 @@
+services:
+  calendar-sync:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: calendar-sync
+    restart: unless-stopped
+    volumes:
+      - ./token.json:/app/token.json
+      - ./credentials.json:/app/credentials.json
+      - ./.env:/app/.env
+    environment:
+      POETRY_VIRTUALENVS_IN_PROJECT: "true"
