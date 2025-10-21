@@ -1,0 +1,8 @@
+.env
+__pycache__/auth.cpython-314.pyc
+__pycache__/config.cpython-314.pyc
+__pycache__/insert_event.cpython-314.pyc
+__pycache__/parser.cpython-314.pyc
+token.json
+credentials.json
+calendar_cache.json
